@@ -1,0 +1,35 @@
+// Utilit styles
+@import './utils/visually-hidden';
+@import './utils/position-hidden';
+@import './utils/backdrop';
+@import './utils/variables';
+
+// Basa styles
+@import './base/base';
+@import './base/container';
+@import './base/size-h2';
+@import './base/reset';
+@import './base/card-set';
+
+// Layouts styles
+@import './layouts/header/header-link';
+@import './layouts/header/cotacts';
+@import './layouts/hero';
+@import './layouts/advantages';
+@import './layouts/us-work';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/footer/addres-footer';
+@import './layouts/footer/send-input';
+
+
+
+// Component styles
+@import './components/logo';
+@import './components/active';
+@import './components/filtr';
+@import './components/social-block';
+@import './components/btn';
+@import './components/social';
+@import './components/modal';
+@import './components/card-works';

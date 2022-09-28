@@ -1,0 +1,49 @@
+
+.work__animation--size {
+    color: #2196F3;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--hero-white);
+
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.work__animation--info {
+    content: '';
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    background-color: rgba(47, 48, 58, 0.8);
+    ;
+
+    left: 0;
+    bottom: 0;
+    transform: translateY(0px);
+    transition: transform 250ms var(--cubic);
+
+    .work__animation:hover & {
+            transform: translateY(-225px);
+    
+        }
+}
+
+
+.work__animation {
+    position: relative;
+    overflow: hidden;
+}
+
+.work__list {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+}

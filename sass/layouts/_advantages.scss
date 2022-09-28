@@ -1,0 +1,34 @@
+// Our advantages
+
+.progres {
+    display: flex;
+    gap: 30px;
+}
+
+
+.progres__icon {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.progres__size-info {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: var(--brand-color);
+
+    margin-bottom: 10px;
+}
+
+.progres__info {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    width: 270px;
+}

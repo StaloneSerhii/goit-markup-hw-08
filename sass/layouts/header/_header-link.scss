@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.bord {
+    border-bottom: 1px solid var(--bord);
+}
+
+.header__item {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 10px;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    gap: 50px;
+
+}
+

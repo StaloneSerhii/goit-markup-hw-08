@@ -1,0 +1,37 @@
+.adres__footer {
+    color: var(--p-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+
+    &:hover {
+            color: var(--bacraund-color-button);
+            transition: color 250ms var(--cubic);
+    }
+}
+
+.addres .addres__list {
+    margin-top: 20px;
+    padding: 0;
+}
+
+ 
+.addres__list li:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.addres__link--str {
+    color: var(--hero-white);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+
+        &:hover {
+                color: var(--bacraund-color-button);
+                transition: color 250ms var(--cubic);
+            }
+}
+
+
