@@ -75,7 +75,17 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 738px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .work {
@@ -229,10 +239,10 @@ img {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
-  max-width: 1600px;
+  max-width: 450px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(270deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
@@ -240,19 +250,39 @@ img {
   background-size: cover;
   background-position: center;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(270deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    background-color: var(--fon);
+    background-size: cover;
+    background-position: center;
+  }
+}
 
 .hero__text {
   text-transform: uppercase;
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--hero-white);
   margin-left: auto;
   margin-right: auto;
-  width: 696px;
+  width: 360px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__text {
+    width: 696px;
+    font-size: 44px;
+  }
 }
 
 .hero__button {
@@ -265,7 +295,7 @@ img {
   line-height: 1.8;
   min-height: 50px;
   border: 0;
-  padding: 10px 32px;
+  padding: 10px 24px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin-top: 30px;
@@ -278,10 +308,20 @@ img {
   background-color: var(--hero-white);
   color: var(--bacraund-color-button);
 }
+@media screen and (min-width: 1200px) {
+  .hero__button {
+    padding: 10px 32px;
+  }
+}
 
 .progres {
-  display: flex;
-  gap: 30px;
+  margin: auto;
+}
+@media screen and (min-width: 1200px) {
+  .progres {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .progres__icon {

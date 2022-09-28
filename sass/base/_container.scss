@@ -3,5 +3,16 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    width: 1200px;
+    max-width: 450px;
+
+
+     // table
+    @media screen and (min-width: 768px) {
+        max-width: 738px;
+            }
+
+    // desktop
+    @media screen and (min-width: 1200px){
+        max-width: 1200px;
+    }
 }
