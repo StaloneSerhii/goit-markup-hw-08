@@ -8,7 +8,12 @@ body {
 }
 
 .section {
-    padding: 94px 0px;
+    padding: 60px 0;
+    
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }
 }
 
 .border {
@@ -17,8 +22,10 @@ body {
 
 
 .footer {
+    
     background-color: var(--fon);
     padding-top: 60px;
     padding-bottom: 60px;
+
 }
 

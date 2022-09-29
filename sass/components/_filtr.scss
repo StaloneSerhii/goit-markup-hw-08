@@ -1,8 +1,26 @@
 .filtr__list {
+
+@media screen and (max-width: 768px) {
+
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 50px;
+  margin-top: -15px;
+}
+
+  @media screen and (min-width: 1200px) {
+      display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+          justify-content: center;
+        
+  }
+}
+
+.filtr__item {
+  @media screen and (max-width: 768px) {
+  margin-top: 15px;
+  }
 }
 
 .botton-filtr {
@@ -19,9 +37,7 @@
     margin-right: 8px;
     cursor: pointer;
 
-  & :last-child {
-        margin-right: 0;
-  }
+
   &:hover, &:focus {
             cursor: pointer;
             background-color: var(--bacraund-color-button);
@@ -31,6 +47,9 @@
         
             transition: background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
   }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
+  
 }
-
-

@@ -8,12 +8,20 @@
 }
 
 .position-icon {
-    display: flex;
-    align-items: baseline;
+        text-align: center;
+    @media screen and (min-width:1200px) {
+            display: flex;
+            text-align: left;
+            align-items: baseline;
+    }
 }
 
 .footer-social {
+    margin: 60px 0;
+    @media screen and (min-width:1200px) {
     margin: 0 0 0 70px;
+    }
+
 }
 
 .footer-social__list {

@@ -1,7 +1,6 @@
 // Our advantages
 
 .progres {
-    margin: auto;
         @media screen and (min-width: 1200px) {
             display: flex;
             gap: 30px;
@@ -27,11 +26,24 @@
     color: var(--brand-color);
 
     margin-bottom: 10px;
+    text-align: center;
+
+
+    @media screen and (min-width:1200px) {
+    text-align: left;
+    }
 }
 
 .progres__info {
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    width: 270px;
+
+    
+        @media screen and (min-width:1200px) {
+                width: 270px;
+            }
+        
 }

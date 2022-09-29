@@ -4,9 +4,10 @@
     list-style: none;
     gap: 10px;
     justify-content: center;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 
-
+    @media screen and (min-width:1200px) {
+    }
 }
 
 .footer-social__link {
