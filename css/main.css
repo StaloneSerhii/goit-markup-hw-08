@@ -89,7 +89,8 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 450px;
+  max-width: 480px;
+  outline: 2px solid tomato;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -273,10 +274,14 @@ img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(270deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-image: linear-gradient(270deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-s-@1x.png);
   background-color: var(--fon);
   background-size: cover;
-  background-position: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(270deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-s-@2x.png);
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero {
@@ -479,9 +484,6 @@ img {
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    max-width: 450px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -512,8 +514,13 @@ img {
 }
 
 .work__item {
-  width: 170px;
+  width: calc((100% - 30px) / 2);
   height: 92px;
+}
+@media screen and (min-width: 1200px) {
+  .work__item {
+    width: 170px;
+  }
 }
 
 /* ico clients */

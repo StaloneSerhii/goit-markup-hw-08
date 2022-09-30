@@ -4,9 +4,6 @@
             flex-wrap: wrap;
             gap: 30px;
             justify-content: center;
-            max-width: 450px;
-            margin-left: auto;
-            margin-right: auto;
     }
         @media screen and (min-width:1200px) {
                 display: flex;
@@ -37,8 +34,12 @@
 }
 
 .work__item {
-    width: 170px;
+    width: calc((100% - 30px)/2);
     height: 92px;
+
+    @media screen and (min-width:1200px) {
+        width: 170px;
+    }
 }
 
 /* ico clients */
