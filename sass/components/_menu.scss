@@ -1,0 +1,163 @@
+.menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+            fill: #2196F3;
+        }
+
+    @media screen and (min-width: 768px) {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.close-btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+
+    width: 40px;
+    height: 40px;
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        fill: #2196F3;
+    }
+
+    @media screen and (min-width: 768px) {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.menu-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    max-width: 480px;
+    padding: 48px 40px;
+
+    width: 100%;
+    height: 100%;
+    background-color: white;
+
+    outline: 1px solid teal;
+
+    transform: translateX(200%);
+    transition: transform 400ms;
+    
+
+    &.is-open {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    @media screen and (min-width:768px) {
+        visibility: hidden;
+    }
+}
+
+.mobile-menu {
+    margin-bottom: auto;
+}
+
+.mobile-menu__contact {
+    margin-bottom: 64px;
+}
+
+.mobile-menu__link {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: calc(47 / 40);
+        letter-spacing: 0.02em;
+        color: #212121;
+
+        &--tell {
+            font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 34px;
+                line-height: calc(40 / 34);    
+                letter-spacing: 0.02em;
+            
+                color: #2196F3;
+
+                &:hover {
+                color: #212121;
+                }
+        }
+        &--email {
+            font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: calc(28 / 24);
+                letter-spacing: 0.02em;
+            
+                color: #757575;
+                
+                &:hover {
+                        color: #212121;
+                    }
+        }
+
+        &:hover {
+            color: #2196F3;
+        }
+}
+
+.mobile-menu__list:not(:last-child) {
+    margin-bottom: 32px;
+
+}
+
+
+.mobile-socials {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 480px;
+}
+
+.mobile-socials__link {
+font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    letter-spacing: 0.02em;
+
+    color: #2196F3;
+
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+        transform: rotate(90deg);
+
+    padding: 0 10px;
+    
+                    &:hover {
+                            color: #212121;
+                        }
+}

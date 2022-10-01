@@ -11,7 +11,7 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-
+padding: 32px 0;
     position: relative;
     overflow: hidden;
 
@@ -41,6 +41,8 @@
         color: var(--bacraund-color-button);
         transition: color 250ms var(--cubic);
     }
+
+
 }
 
 .header__icon--contact {
@@ -48,6 +50,7 @@
 }
 
 .header__addres {
+   
     display: flex;
     color: var(--p-color);
     font-weight: 500;
@@ -56,10 +59,18 @@
     gap: 30px;
     margin: 0;
     padding: 0;
-
+    
     & a:hover,
     & a:focus {
         color: var(--bacraund-color-button);
         transition: color 250ms var(--cubic);
     }
+
+ @media screen and (min-width: 767px) {
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+ }
+
+    
 }

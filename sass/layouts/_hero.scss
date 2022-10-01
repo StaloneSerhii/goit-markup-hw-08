@@ -20,6 +20,21 @@
     background-color: var(--fon);
     background-size: cover;
 
+        @media screen and (min-width: 768px) {
+            text-align: center;
+            max-width: 1600px;
+            margin-left: auto;
+            margin-right: auto;
+    
+    
+            background-image: linear-gradient(270deg,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/herom-@2x.png);
+            background-color: var(--fon);
+            background-size: cover;
+            background-position: center;
+        }
 
     @media screen and (min-width: 1200px) {
             padding-top: 200px;
@@ -52,6 +67,12 @@
 
     margin-left: auto;
     margin-right: auto;
+
+
+
+         @media screen and (max-width: 1199px) {
+                            max-width: 360px;
+                        }
 
     @media screen and (min-width: 1200px) {
             width: 696px;

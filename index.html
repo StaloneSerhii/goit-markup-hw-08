@@ -27,6 +27,19 @@
         <a class="header__logo list" lang="en" href="/"
           ><span class="logo__web">Web</span>Studio</a
         >
+        <!-- Mobil menu icon -->
+        <div>
+          <button
+            type="button"
+            class="menu-btn js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
         <div class="hide">
           <nav>
             <ul class="header__list list">
@@ -98,7 +111,7 @@
             <li>
               <div class="progres__icon">
                 <svg width="70" height="70">
-                  <use href="./images/symbol-defs.svg#icon-diagram"></use>
+                  <use href="./images/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
               <h3 class="progres__size-info">ПУНКТУАЛЬНІСТЬ</h3>
@@ -110,7 +123,7 @@
             <li>
               <div class="progres__icon">
                 <svg width="70" height="70">
-                  <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+                  <use href="./images/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
               <h3 class="progres__size-info">ПЛАНУВАННЯ</h3>
@@ -121,7 +134,7 @@
             <li>
               <div class="progres__icon">
                 <svg width="70" height="70">
-                  <use href="./images/symbol-defs.svg#icon-antenna"></use>
+                  <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
               <h3 class="progres__size-info">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
@@ -568,6 +581,7 @@
     </main>
     <!--adress footer-->
     <footer class="footer">
+      <div></div>
       <div class="container position-icon">
         <div>
           <a class="logo__footer list" lang="en" href="/">
@@ -664,30 +678,82 @@
             </li>
           </ul>
         </div>
-        <form class="send-footer">
-          <strong class="send-footer__strong">Підпишіться на розсилку</strong>
-          <div class="send-footer__block">
-            <input
-              class="send-footer__input"
-              minlength="3"
-              maxlength="12"
-              id="send"
-              name="send"
-              type="text"
-              placeholder="E-mail"
-              required
-            />
-            <label for="send"></label>
-            <button class="btn btn-send" type="submit">
-              Підписатися
-              <svg width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-send"></use>
-              </svg>
-            </button>
-          </div>
-        </form>
       </div>
+      <form class="send-footer">
+        <strong class="send-footer__strong">Підпишіться на розсилку</strong>
+        <div class="send-footer__block">
+          <input
+            class="send-footer__input"
+            minlength="3"
+            maxlength="12"
+            id="send"
+            name="send"
+            type="text"
+            placeholder="E-mail"
+            required
+          />
+          <label for="send"></label>
+          <button class="btn btn-send" type="submit">
+            Підписатися
+            <svg width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-send"></use>
+            </svg>
+          </button>
+        </div>
+      </form>
     </footer>
+
+    <!-- Mobil menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="close-btn js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu__list">
+          <a
+            href="http://127.0.0.1:5500/index.html"
+            class="mobile-menu__link list"
+            >Студія</a
+          >
+        </li>
+        <li class="mobile-menu__list">
+          <a
+            href="http://127.0.0.1:5500/portfolio.html"
+            class="mobile-menu__link list"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="mobile-menu__list">
+          <a href="" class="mobile-menu__link list">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="list mobile-menu__contact">
+        <li>
+          <a href="tel:+380961111111" class="mobile-menu__link--tell list"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li>
+          <a
+            href="mailto:info@devstudio.com"
+            class="mobile-menu__link--email list"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-socials list">
+        <li><a href="" class="mobile-socials__link list">Instagram </a></li>
+        <li><a href="" class="mobile-socials__link list">Twitter</a></li>
+        <li><a href="" class="mobile-socials__link list">Facebook</a></li>
+        <li><a href="" class="mobile-socials__link list">LinkedIn</a></li>
+      </ul>
+    </div>
+
     <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -786,5 +852,13 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <!-- mobil script -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

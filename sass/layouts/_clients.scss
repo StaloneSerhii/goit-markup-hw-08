@@ -1,11 +1,19 @@
 .work__list-client {
-    @media screen and (max-width:768px) {
+
+    @media screen and (max-width:767px) {
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
             justify-content: center;
     }
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width:768px) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 30px;
+                    justify-content: center;
+                }
+
+            @media screen and (min-width:1200px) {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 30px;
@@ -36,6 +44,10 @@
 .work__item {
     width: calc((100% - 30px)/2);
     height: 92px;
+
+     @media screen and (min-width:768px) {
+                width: 226px;
+            }
 
     @media screen and (min-width:1200px) {
         width: 170px;
