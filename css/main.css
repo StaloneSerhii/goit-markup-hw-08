@@ -176,6 +176,9 @@ img {
   line-height: 16px;
   letter-spacing: 0.02em;
   transition: box-shadow 250ms var(--cubic);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .card-set__items {
@@ -188,7 +191,6 @@ img {
 @media screen and (min-width: 768px) {
   .card-set__items {
     width: calc((100% - 30px) / 2);
-    border: 1px solid var(--backraund-usteam);
     margin-bottom: 0;
   }
 }
@@ -1050,10 +1052,11 @@ img {
 }
 
 .modal {
-  width: 450px;
+  max-width: 450px;
   background-color: var(--hero-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1287,6 +1290,8 @@ img {
 
 .card-set__text {
   padding: 20px 25px;
+  border: 1px solid var(--backraund-usteam);
+  flex-grow: 1;
 }
 .card-set__text::after {
   position: absolute;

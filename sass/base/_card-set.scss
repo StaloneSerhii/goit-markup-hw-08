@@ -19,10 +19,12 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-
+    
     transition: box-shadow 250ms var(--cubic);
 
-
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
  .card-set__items {
@@ -36,7 +38,6 @@
 
             @media screen and (min-width: 768px) {
                 width: calc((100% - 30px)/2);
-                border: 1px solid var(--backraund-usteam);
                 margin-bottom: 0;
             }
 

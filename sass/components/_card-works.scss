@@ -33,7 +33,8 @@
 
 .card-set__text {
     padding: 20px 25px;
-
+    border: 1px solid var(--backraund-usteam);
+    flex-grow: 1;
 
     &::after {
             position: absolute;
