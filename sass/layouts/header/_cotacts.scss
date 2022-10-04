@@ -72,7 +72,8 @@ padding: 32px 0;
     flex-direction: column;
  }
  @media screen and (min-width: 1200px) {
-    flex-direction: row
+    flex-direction: row;
+    gap: 30px;
  }
 
     
